@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/office-meeting-2.jpg"
+          src={assetPath("/images/office-meeting-2.jpg")}
           alt="עבודות נגרות P.M. Studio"
           fill
           className="object-cover"

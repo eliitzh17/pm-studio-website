@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/images/office-meeting-1.jpg"
+              src={assetPath("/images/office-meeting-1.jpg")}
               alt="חדר ישיבות מעוצב - P.M. Studio"
               fill
               className="object-cover"

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 type Category = "all" | "office" | "kitchen" | "residential";
 
@@ -76,10 +77,10 @@ export default function Gallery() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group"
-                onClick={() => setLightboxImage(img.src)}
+                onClick={() => setLightboxImage(assetPath(img.src))}
               >
                 <Image
-                  src={img.src}
+                  src={assetPath(img.src)}
                   alt={img.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

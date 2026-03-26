@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 const services = [
   {
@@ -67,7 +68,7 @@ export default function Services() {
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src={service.image}
+                  src={assetPath(service.image)}
                   alt={service.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
