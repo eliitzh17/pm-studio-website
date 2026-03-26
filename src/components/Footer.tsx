@@ -49,12 +49,12 @@ export default function Footer() {
               <li>נחום חפצדי 17, ירושלים</li>
               <li>מגדל רם, קומה 11</li>
               <li>
-                <a href="tel:0502654957" className="hover:text-accent transition-colors">
+                <a href="https://wa.me/972502654957" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                   אילנית: 050-265-4957
                 </a>
               </li>
               <li>
-                <a href="tel:0526384355" className="hover:text-accent transition-colors">
+                <a href="https://wa.me/972526384355" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                   פנחס: 052-638-4355
                 </a>
               </li>
