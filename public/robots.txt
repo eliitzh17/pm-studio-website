@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eliitzh17.github.io/pm-studio-website/sitemap.xml
